@@ -1,0 +1,11 @@
+name1='Daniel'
+name2="Daniel"
+age=37
+height=6.1
+is_student=True
+print(name1,name2,age,height,is_student)
+print(type(name1))
+print(type(name2))
+print(type(age))
+print(type(height))
+print(type(is_student))
