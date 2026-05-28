@@ -1,0 +1,18 @@
+#Problem: Write a function called is_palindrome(text) #that takes a string and returns True if it is a palindrome (reads the same forward and backward) and False otherwise.
+#Hint: Python’s string slicing [::-1] is the "Pythonic" way to reverse a string. Remember to consider case-sensitivity!
+
+
+def is_palindrome(text):
+    cleaned_text = text.replace(" ", "").lower()
+    reversed_text = cleaned_text[::-1]
+    print("Cleaned text:", cleaned_text)
+    print("Reversed text:", reversed_text)
+    if cleaned_text == reversed_text:
+        return print(True)
+    else:
+        return print(False)
+
+is_palindrome("radar")
+is_palindrome("Radar")
+is_palindrome("ra dar")
+is_palindrome("hello")
